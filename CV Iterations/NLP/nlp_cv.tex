@@ -1,0 +1,175 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItemNoColon}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItemNoColon}[2]{\resumeItemNoColon{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	 \textbf{{\Large Amanpreet Singh}} &
+     \href{mailto:amanpreet.singh@stonybrook.edu}{\faEnvelope \space amanpreet.singh@stonybrook.edu}\\
+     \faPhone \space +1 631-312-2565 &
+     \href{https://www.linkedin.com/in/amanpreet-singh-k}{\faLinkedin \space in/amanpreet-singh-k}\\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Stony Brook University}{New York, U.S.A.}
+      {Master of Science in Computer Science (Graduating 2021)}{Aug. 2019 -- Present}
+      \resumeItemListStart
+      \resumeItem{Courses:}
+       {Analysis of Algorithms, Natural Language Processing, Data Science, Theory of Computation}
+       \resumeItem{Teaching Assistant:}
+       {CSE 214 - Data Structures}
+       \resumeItemListEnd
+    \resumeSubheading
+      {K.J.Somaiya College of Engineering (University of Mumbai)}{Mumbai, India}
+      {Bachelor of Engineering in Information Technology;  First Class with Distinction (72.9\%)}{Aug. 2011 -- June. 2015}
+      \resumeItemListStart
+      \resumeItem{Courses:}
+       {Data Structures and Algorithms, Artificial Intelligence, Discrete Mathematics, Data Warehousing}
+       \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Identifying Toxicity in Online Interactions (\textit{Ongoing})} {
+    Apply neural models to identify toxicity in Wikipedia comments and further divide them into 6-sub class labels. Also try and identify any bias that might have crept in the data due to the turks who manually labelled the dataset. 
+  }
+   \resumeSubItem{Predict Chess Player Rating (\textit{Ongoing})} {
+    Predict the Elo ratings of a player from the moves sequence data.
+  }
+  \resumeSubItem{Skip-gram based Word2Vec Implementation}
+      {Word2Vec implementation with analysis of cross entropy loss v/s noise contrastive estimation as the objective function. Evaluation is done on the semantic task of word analogies.}
+  \resumeSubItem{Comparison of Sentence Representations using Sentiment Analysis}
+      {Sentence representation generation using Deep Averaging Network(DAN) and the Gated Recurrent Unit(GRU) Sequence-Based models. The representations are then applied to IMDB movie reviews for sentiment classification and their performance analysed.} 
+  \resumeSubItem{Arc Standard based Dependency Parser}
+      {A Neural Network Dependency Parser based on a 2014 paper which uses word, POS-tag and label embeddings to create a dependency tree by applying arc-standard transitions.}   
+  \resumeSubItem{Physual(\textit{Capstone})}
+      {A text to scene generation system to visualize Mechanics word problems based on StanfordCore NLP, Java 3D and Blender Models.}
+  \resumeSubItem{Natural Language Toolkit}
+    {Miscellaneous projects including 'Inverted Index Builder' and 'News Article Classifier'.
+    }
+    \resumeSubItem{Machine Learning}
+    {'Products Review Sentiment Analyser', 'Songs Recommender System', 'Handwritten Digit Recognizer' and 'Similar Document Clustering System' based on tf-idf and page rank algorithms.     
+    }
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATION(S)-----------------
+\section{Publication(s)}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{http://research.ijcaonline.org/volume116/number14/pxc3902766.pdf}	{Visualization of Mechanics Problems based on Natural Language Processing}}
+      {Summarized the research efforts and results of the aforementioned Capstone Project. (\textit{International Journal of Computer Applications - April,2015})}
+      
+\resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+     \resumeSubheading
+      {J.P. Morgan Chase \& Co.}{Mumbai, India}
+      {Associate (Senior Application Developer)}{Feb 2018 -- Aug 2019}
+      \resumeItemListStart
+      \resumeItem{NLP based Query Service}
+       {An interactive system to resolve user queries that uses a model trained on the CRF classifier from StanfordCore NLP and returns the nearest possible solution from an existing knowledge base.}
+       \resumeItem{Trader Analytics} 
+       {Statistical and analytical tools including absolute and percent price variation, market share and standard deviation of Stocks based on historic data to assist traders in making better decisions.}
+       \resumeItem{Real-Time Pricing Solution}
+          {Developed a component from scratch which approximates market risk in real-time using live prices and Taylor Series; and publishes the results onto a messaging interface. Test Driven Development and incremental build principle were used in development with frameworks such as JBehave, Spring and REST.}
+       \resumeItemListEnd
+      \vspace{-1pt}\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+     \textit{\small Technology Analyst (Application Developer)} & \textit{\small July 2015 -- Jan 2018} \\
+      \end{tabular*}\vspace{-5pt}
+      \resumeItemListStart
+          \resumeItem{Risk Management System}
+          {Core application used by Traders for visualizing and hedging risk: \\
+          1. Optimized the Positions and Trades feeds processing using LMax Disruptor, a low latency queue library.\\
+          2. Process startup time improvement by 50\% through the use of concurrency and Spring Annotations.\\
+          }
+        \resumeItem{Market Data Source}
+          {Developed a framework for validating an in-house process that publishes live market data}\resumeItem{Shell Scripting and Java SSH}
+          {Shell scripts to streamline deployment and startup of applications on servers.}\resumeItem{MongoDB}
+          {Proficient in setting up standalone/replica set instance, data manipulation and backup/restoration.} 
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%--------TECHNICAL SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+ \resumeSubItem{Languages}{Java, Python, Unix Shell Scripting, SQL, MATLAB}
+ \resumeSubItem{Frameworks}{Tensorflow, NumPy, Scikit-Learn, Pandas, Keras, Matplotlib, Spring, Stanford CoreNLP}
+ \resumeSubItem{Databases}{Sybase ASE, MongoDB, MySQL}
+ \resumeSubHeadingListEnd
+
+\end{document}
