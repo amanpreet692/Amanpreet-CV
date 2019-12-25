@@ -11,6 +11,7 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
+\usepackage{academicons}
 \usepackage[T1]{fontenc}
 
 
@@ -79,96 +80,99 @@
 	 \textbf{{\Large Amanpreet Singh}} &
      \href{mailto:amanpreet.singh@stonybrook.edu}{\faEnvelope \space amanpreet.singh@stonybrook.edu}\\
      \faPhone \space +1 631-312-2565 &
-     \href{https://www.linkedin.com/in/amanpreet-singh-k}{\faLinkedin \space in/amanpreet-singh-k}\\
+     \href{https://www.linkedin.com/in/amanpreet-singh-k}{\faLinkedin \space /amanpreet-singh-k}\\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
-\section{Education}
+\section {{\faGraduationCap} Education}
   \resumeSubHeadingListStart
   \resumeSubheading
       {Stony Brook University}{New York, U.S.A.}
-      {Master of Science in Computer Science (Graduating 2021)}{Aug. 2019 -- Present}
+      {Master of Science in Computer Science; GPA: 3.93}{2019 -- 2021}
       \resumeItemListStart
-      \resumeItem{Courses:}
-       {Analysis of Algorithms, Natural Language Processing, Data Science, Theory of Computation}
-       \resumeItem{Teaching Assistant:}
+      \resumeItem{Courses}
+       {Analysis of Algorithms, Data Science, Natural Language Processing}
+       \resumeItem{Teaching Assistant}
        {CSE 214 - Data Structures}
        \resumeItemListEnd
     \resumeSubheading
-      {K.J.Somaiya College of Engineering (University of Mumbai)}{Mumbai, India}
-      {Bachelor of Engineering in Information Technology;  First Class with Distinction (72.9\%)}{Aug. 2011 -- June. 2015}
+      {University of Mumbai}{Mumbai, India}
+      {Bachelor of Engineering in Information Technology;  First Class with Distinction (72.9\%)}{2011 -- 2015}
       \resumeItemListStart
-      \resumeItem{Courses:}
-       {Data Structures and Algorithms, Artificial Intelligence, Discrete Mathematics, Data Warehousing}
+      \resumeItem{Relevant Courses}
+       {Data Structures and Algorithms, Artificial Intelligence, Discrete Mathematics}
        \resumeItemListEnd
   \resumeSubHeadingListEnd
+
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{{\faFlask} Projects}
   \resumeSubHeadingListStart
-  \resumeSubItem{Identifying Toxicity in Online Interactions (\textit{Ongoing})} {
-    Apply neural models to identify toxicity in Wikipedia comments and further divide them into 6-sub class labels. Also try and identify any bias that might have crept in the data due to the turks who manually labelled the dataset. 
+  \resumeSubItem{Toxic Online Comments} {
+   Applied Deep learning and Transfer learning to identify Toxicity in Wikipedia comments. Evaluated and compared the performance of sequential and state-of-the-art BERT models on the task.
   }
-   \resumeSubItem{Predict Chess Player Rating (\textit{Ongoing})} {
-    Predict the Elo ratings of a player from the moves sequence data.
+   \resumeSubItem{Chess Player Ratings} {
+    A regression based model to predict the Elo rating of a player from the moves sequences.
   }
-  \resumeSubItem{Skip-gram based Word2Vec Implementation}
+  \resumeSubItem{Relationship Extraction}{A Bi-GRU model with Attention and dropout to evaluate its performance on the SemEval-2010 Task 8 dataset.}
+  
+  \resumeSubItem{Sentence Vector Representations}
+      {Implementation of Deep Averaging Network(DAN) and the Gated Recurrent Unit(GRU) Sequence models. The results are then evaluated on IMDB movie reviews for sentiment classification.} 
+      \resumeSubItem{Skip-gram based Word2Vec}
       {Word2Vec implementation with analysis of cross entropy loss v/s noise contrastive estimation as the objective function. Evaluation is done on the semantic task of word analogies.}
-  \resumeSubItem{Comparison of Sentence Representations using Sentiment Analysis}
-      {Sentence representation generation using Deep Averaging Network(DAN) and the Gated Recurrent Unit(GRU) Sequence-Based models. The representations are then applied to IMDB movie reviews for sentiment classification and their performance analysed.} 
-  \resumeSubItem{Arc Standard based Dependency Parser}
-      {A Neural Network Dependency Parser based on a 2014 paper which uses word, POS-tag and label embeddings to create a dependency tree by applying arc-standard transitions.}   
   \resumeSubItem{Physual(\textit{Capstone})}
       {A text to scene generation system to visualize Mechanics word problems based on StanfordCore NLP, Java 3D and Blender Models.}
-  \resumeSubItem{Natural Language Toolkit}
-    {Miscellaneous projects including 'Inverted Index Builder' and 'News Article Classifier'.
+  \resumeSubItem{Natural Language Toolkit Misc.}
+    {Miscellaneous projects including 'News Article Classifier' and 'Similar Document Clustering System' based on tf-idf and page rank algorithms..
     }
     \resumeSubItem{Machine Learning}
-    {'Products Review Sentiment Analyser', 'Songs Recommender System', 'Handwritten Digit Recognizer' and 'Similar Document Clustering System' based on tf-idf and page rank algorithms.     
+    {'Products Review Sentiments', 'Songs Recommendation', and 'Handwritten Digit Recognizer'.     
     }
   \resumeSubHeadingListEnd
 
 %-----------PUBLICATION(S)-----------------
-\section{Publication(s)}
+\section{{\aiGoogleScholar} Publication(s)}
   \resumeSubHeadingListStart
     \resumeSubItem{\href{http://research.ijcaonline.org/volume116/number14/pxc3902766.pdf}	{Visualization of Mechanics Problems based on Natural Language Processing}}
       {Summarized the research efforts and results of the aforementioned Capstone Project. (\textit{International Journal of Computer Applications - April,2015})}
       
 \resumeSubHeadingListEnd
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{{\faPieChart} Experience}
   \resumeSubHeadingListStart
      \resumeSubheading
       {J.P. Morgan Chase \& Co.}{Mumbai, India}
-      {Associate (Senior Application Developer)}{Feb 2018 -- Aug 2019}
+      {Senior Application Developer}{Feb 2018 -- Aug 2019}
       \resumeItemListStart
-      \resumeItem{NLP based Query Service}
+      \resumeItem{NLP Query Service}
        {An interactive system to resolve user queries that uses a model trained on the CRF classifier from StanfordCore NLP and returns the nearest possible solution from an existing knowledge base.}
        \resumeItem{Trader Analytics} 
-       {Statistical and analytical tools including absolute and percent price variation, market share and standard deviation of Stocks based on historic data to assist traders in making better decisions.}
-       \resumeItem{Real-Time Pricing Solution}
-          {Developed a component from scratch which approximates market risk in real-time using live prices and Taylor Series; and publishes the results onto a messaging interface. Test Driven Development and incremental build principle were used in development with frameworks such as JBehave, Spring and REST.}
+       {Implemented functionalities such as absolute and percent variation, market share and standard deviation of stock prices based on historic data to assist traders in making better decisions.}
+       \resumeItem{Real-Time Pricing}
+          {Developed a component which approximates market risk in real-time from live underlying prices; and publishes the results for consumption. It helped retire a legacy system thus saving the firm $\sim$\$250k.}
        \resumeItemListEnd
       \vspace{-1pt}\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-     \textit{\small Technology Analyst (Application Developer)} & \textit{\small July 2015 -- Jan 2018} \\
+     \\\textit{\small Application Developer} & \textit{\small July 2015 -- Jan 2018}
       \end{tabular*}\vspace{-5pt}
-      \resumeItemListStart
-          \resumeItem{Risk Management System}
-          {Core application used by Traders for visualizing and hedging risk: \\
-          1. Optimized the Positions and Trades feeds processing using LMax Disruptor, a low latency queue library.\\
-          2. Process startup time improvement by 50\% through the use of concurrency and Spring Annotations.\\
+       \resumeItemListStart
+      \resumeItem{Risk Management System}
+          {Worked extensively on the core app used by traders for visualizing and hedging risk;\\
+          1. Optimized the Positions feed using LMax Disruptor, a low latency queue library for upto 20\% faster processing.\\
+          2. Process startup time improvement by 50\% through the use of concurrency and Spring annotations.\\
           }
         \resumeItem{Market Data Source}
-          {Developed a framework for validating an in-house process that publishes live market data}\resumeItem{Shell Scripting and Java SSH}
-          {Shell scripts to streamline deployment and startup of applications on servers.}\resumeItem{MongoDB}
-          {Proficient in setting up standalone/replica set instance, data manipulation and backup/restoration.} 
+          {Framework for validating the functionality of the critical market data publisher and reporting results using Java MXBeans and Apache POI. Reduced the manual testing effort by 90\%.}
+          \resumeItem{Quick-Deploy}
+          {Streamlined the deployment, startup and health check of application modules in production.}
+          \resumeItem{MongoDB High availability}
+          {Mechanism to switch from replica set to standalone configuration on the fly in case of a data center failure. Ensured business continuity during critical failures and reduced operational risk. }  
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %--------TECHNICAL SKILLS------------
-\section{Technical Skills}
+\section{{\faGears} Technical Skills}
  \resumeSubHeadingListStart
  \resumeSubItem{Languages}{Java, Python, Unix Shell Scripting, SQL, MATLAB}
- \resumeSubItem{Frameworks}{Tensorflow, NumPy, Scikit-Learn, Pandas, Keras, Matplotlib, Spring, Stanford CoreNLP}
+ \resumeSubItem{Frameworks}{Tensorflow, NumPy, Scikit-Learn, Pandas, Keras, Matplotlib, Spring, Swagger}
  \resumeSubItem{Databases}{Sybase ASE, MongoDB, MySQL}
  \resumeSubHeadingListEnd
 
