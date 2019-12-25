@@ -11,6 +11,8 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
+\usepackage{xcolor}
+\definecolor{secondary}{HTML}{0D47A1}
 \usepackage[T1]{fontenc}
 
 
@@ -34,9 +36,14 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
+% \renewcommand{\section}[2]{\vspace{5pt}
+%   \colorbox{secondary}{\color{white}\raggedbottom\normalsize\textbf{{#1}{\hspace{7pt}#2}}}
+% }
+
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
 
 %-------------------------
 % Custom commands
@@ -79,92 +86,94 @@
 	 \textbf{{\Large Amanpreet Singh}} &
      \href{mailto:amanpreet.singh@stonybrook.edu}{\faEnvelope \space amanpreet.singh@stonybrook.edu}\\
      \faPhone \space +1 631-312-2565 &
-     \href{https://www.linkedin.com/in/amanpreet-singh-k}{\faLinkedin \space in/amanpreet-singh-k}\\
+     \href{https://www.linkedin.com/in/amanpreet-singh-k}{\faLinkedin \space /amanpreet-singh-k}\\
 \end{tabular*}
 
 
 %-----------EDUCATION-----------------
-\section{Education}
+\section {{\faGraduationCap} Education}
   \resumeSubHeadingListStart
   \resumeSubheading
       {Stony Brook University}{New York, U.S.A.}
-      {Master of Science in Computer Science (Graduating 2021)}{Aug. 2019 -- Present}
+      {Master of Science in Computer Science; GPA: 3.93}{2019 -- 2021}
       \resumeItemListStart
       \resumeItem{Courses}
-       {Analysis of Algorithms, Data Science, Natural Language Processing, Theory of Computation}
+       {Analysis of Algorithms, Data Science, Natural Language Processing}
        \resumeItem{Teaching Assistant}
        {CSE 214 - Data Structures}
        \resumeItemListEnd
     \resumeSubheading
-      {K.J.Somaiya College of Engineering (University of Mumbai)}{Mumbai, India}
-      {Bachelor of Engineering in Information Technology;  First Class with Distinction (72.9\%)}{Aug. 2011 -- June. 2015}
+      {University of Mumbai}{Mumbai, India}
+      {Bachelor of Engineering in Information Technology;  First Class with Distinction (72.9\%)}{2011 -- 2015}
       \resumeItemListStart
       \resumeItem{Courses}
-       {Data Structures and Algorithms, Artificial Intelligence, Discrete Mathematics, Data Warehousing}
+       {Data Structures and Algorithms, Artificial Intelligence, Discrete Mathematics}
        \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{{\faPieChart} Experience}
   \resumeSubHeadingListStart
       \resumeSubheading
       {J.P. Morgan Chase \& Co.}{Mumbai, India}
-      {Associate (Senior Application Developer)}{Feb 2018 -- Aug 2019}
+      {Senior Application Developer}{Feb 2018 -- Aug 2019}
       \resumeItemListStart
-       \resumeItem{Data Access Control System (DACS) authentication for Live Prices}
-       {Application-wide authentication to ensure legitimate access of live price data. Instrumental in helping the firm avoid any audit issues and reduced subscription costs per trader by 50\%.}
+       \resumeItem{Data Access Control System (DACS) Authentication}
+       {Ensuring secure access to live prices from Bloomberg. Instrumental in helping the firm avoid any audit issues and reduced subscription costs per trader by 50\%.}
        \resumeItem{Trader Analytics} 
-       {Statistical and Analytical tools including absolute and percent price variation, market share and standard deviation of Stocks based on historic data to assist traders in making better decisions.}
+       {Implemented functionalities such as absolute and percent variation, market share and standard deviation of stock prices based on historic data to assist traders in making better decisions.}
        \resumeItem{Memory Optimization}
-       {Performance tuning of application memory consumption and (Garbage First) G1 Garbage Collection through careful heap analysis of humongous allocations.}
-       \resumeItem{Real-Time Pricing Solution}
-          {Developed a component from scratch which approximates market risk in real-time using live prices and Taylor Series; and publishes the results onto a messaging interface. Built with frameworks such as JBehave, Spring, REST and Gradle, it helped retire a legacy system thus saving \~ \$250k.}
+       {Performance tuning of heap consumption and G1 Garbage Collection through careful analysis of humongous allocations resulting in 80\% fewer memory related issues.}
+       \resumeItem{Real-Time Pricing}
+          {Developed a component which approximates market risk in real-time from live underlying prices; and publishes the results for consumption. It helped retire a legacy system thus saving the firm $\sim$\$250k.}
 	   \resumeItemListEnd
       \vspace{-1pt}
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-     \textit{\small Technology Analyst (Application Developer)} & \textit{\small July 2015 -- Jan 2018} \\
+     \textit{\small Application Developer} & \textit{\small July 2015 -- Jan 2018} \\
       \end{tabular*}\vspace{-5pt}
       \resumeItemListStart
           \resumeItem{Risk Management System}
-          {Core application used by Traders for visualizing and hedging risk. Implemented a lot of enhancements and workflows including but not limited to : \\
-          1. Optimized the Positions and Trades feeds processing using LMax Disruptor, a low latency queue library.\\
-          2. Process startup time improvement by 50\% through the use of concurrency and Spring Annotations.\\
+          {Worked extensively on the core app used by traders for visualizing and hedging risk;\\
+          1. Optimized the Positions feed using LMax Disruptor, a low latency queue library for upto 20\% faster processing.\\
+          2. Process startup time improvement by 50\% through the use of concurrency and Spring annotations.\\
           }
         \resumeItem{Market Data Source}
-          {Wrote a library for validating the functionality of an application that publishes market data and reporting results using Java MBeans and Apache POI. Reduced manual effort by 90\%, accelerating SDLC.}\resumeItem{Shell Scripting and Java SSH}
-          {Bash scripts to streamline the deployment and startup of application modules on servers. A Java-SSH utility to go with it for locally monitoring remote process health.}        \resumeItem{MongoDB Management}
-          {Set up standalone/replica set instance with dynamic resiliency to ensure business continuity. Proficient in data manipulation, backup/restore through JSON documents or JavaScript.}\break  
+          {Framework for validating the functionality of the critical market data publisher and reporting results using Java MXBeans and Apache POI. Reduced the manual testing effort by 90\%.}\resumeItem{Quick-Deploy}
+          {Streamlined the deployment, startup and health check of application modules in production to bring down the release time by 66\%.}        \resumeItem{MongoDB High availability}
+          {Mechanism to switch from replica set to standalone configuration on the fly in case of a data center failure. Ensured business continuity during critical failures and reduced operational risk. } 
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %--------TECHNICAL SKILLS------------
-\section{Technical Skills}
+\section{{\faGears} Skills}
  \resumeSubHeadingListStart
- \resumeSubItem{Languages}{Java, Python, Unix Shell Scripting, SQL, MATLAB}
- \resumeSubItem{Frameworks}{Spring, Spring-Boot, Swagger, Apache POI, Java MBeans, JMS, Pandas, MatplotLib, JBehave}
+ \resumeSubItem{Languages}{Java, Python, Unix Shell Scripting, SQL}
+ \resumeSubItem{Frameworks}{Spring, Spring-Boot, Swagger, Apache POI, Java MBeans, JMS, Pandas, JBehave}
  \resumeSubItem{CI Tools}{Gradle, Team City, Git, Bitbucket, Ant, Jenkins, YourKit}
  \resumeSubItem{Databases}{Sybase ASE, MongoDB, MySQL}
  \resumeSubHeadingListEnd
 %-------------------------------------------
 
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{{\faFlask} Projects}
   \resumeSubHeadingListStart
-  \resumeSubItem{Predict Chess Player Rating (\textit{Ongoing})} {
-    Predict the Elo ratings of a player from the moves sequence data.
+  \resumeSubItem{Chess Player Ratings} {A regression model to predicting the Elo rating of a player from the moves sequence data.
+  }\resumeSubItem{Toxic Online Comments} {
+  Deep learning model for identifying Toxicity in Wikipedia comments.
   }
   \resumeSubItem{\href{https://github.com/amanpreet692/HandleBarsEmailTemplate}
     {Email Template Generator}}
-    {Built on the handlebars framework, creates reactive templates to send out email alerts.}
-    \resumeSubItem{Machine Learning/NLP}
-    {'Inverted Index Builder', 'News Article Classifier', 'Products Review Sentiment Analyser', 'Songs Recommender System' and 'Similar Document Clustering System' based on tf-idf and page rank algorithms.
-    }\resumeSubItem{Pratham NGO}
+    {Built on the handlebars framework, creates templates to send out reactive email alerts.}
+    \resumeSubItem{Pratham NGO}
       {A system to keep track of the  underprivileged students supported by the NGO. Migrated data from Salesforce to Azure SQL using Pentaho Kettle and developed a Java utility for reporting faulty data.}
     \resumeSubItem{\href{https://bitbucket.org/APS692/udp-with-error-detection} {Reliable UDP}}
       {Server-Client Exchange with Checksum validation and re-transmission in case of corrupt data.}
   \resumeSubItem{Physual(\textit{Capstone})}
       {Text to scene system to visualize Mechanics problems using NLP, Java 3D and Blender Models.}
+\resumeSubItem{Machine Learning/NLP}
+    {'Inverted Index Builder', 'News Article Classifier', 'Products Review Sentiment Analyser', 'Songs Recommender System' and 'Similar Document Clustering System' based on tf-idf and page rank algorithms.
+    }      
   \resumeSubHeadingListEnd
 
 \end{document}
