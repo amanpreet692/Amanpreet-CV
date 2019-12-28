@@ -8,12 +8,22 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
 \usepackage{xcolor}
 \definecolor{secondary}{HTML}{0D47A1}
 \usepackage[T1]{fontenc}
+
+\usepackage[pdfencoding=auto]{hyperref}
+
+\pdfstringdefDisableCommands{%
+  \def\faGraduationCap{\unichar{"F19D}}
+  \def\faFlask{\unichar{"F0C3}}
+  \def\aiGoogleScholar{\unichar{"E9D4}}
+  \def\faPieChart{\unichar{"F200}}
+  \def\faGears{\unichar{"F085}}
+  %
+}
 
 
 \pagestyle{fancy}
@@ -146,7 +156,7 @@
   \resumeSubHeadingListEnd
 
 %--------TECHNICAL SKILLS------------
-\section{{\faGears} Skills}
+\section{{\faGears} Technical Skills}
  \resumeSubHeadingListStart
  \resumeSubItem{Languages}{Java, Python, Unix Shell Scripting, SQL}
  \resumeSubItem{Frameworks}{Spring, Spring-Boot, Swagger, Apache POI, Java MBeans, JMS, Pandas, JBehave}

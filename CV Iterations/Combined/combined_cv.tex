@@ -8,10 +8,21 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
+\usepackage{academicons}
 \usepackage[T1]{fontenc}
+
+\usepackage[pdfencoding=auto]{hyperref}
+
+\pdfstringdefDisableCommands{%
+  \def\faGraduationCap{\unichar{"F19D}}
+  \def\faFlask{\unichar{"F0C3}}
+  \def\aiGoogleScholar{\unichar{"E9D4}}
+  \def\faPieChart{\unichar{"F200}}
+  \def\faGears{\unichar{"F085}}
+  %
+}
 
 
 \pagestyle{fancy}
@@ -160,7 +171,7 @@
   \resumeSubHeadingListEnd
 
 %-----------PUBLICATION(S)-----------------
-\section{Publication(s)}
+\section{{\aiGoogleScholar} Publication(s)}
   \resumeSubHeadingListStart
     \resumeSubItem{\href{http://research.ijcaonline.org/volume116/number14/pxc3902766.pdf}	{Visualization of Mechanics Problems based on Natural Language Processing}}
       {Summarized the research efforts and results of the aforementioned Capstone Project. (\textit{International Journal of Computer Applications - April,2015})}
@@ -168,7 +179,7 @@
 \resumeSubHeadingListEnd
 
 %--------TECHNICAL SKILLS------------
-\section{Technical Skills}
+\section{{\faGears} Technical Skills}
  \resumeSubHeadingListStart
  \resumeSubItem{Languages}{Java, Python, Unix Shell Scripting, SQL, MATLAB}
  \resumeSubItem{Frameworks}{Spring, Spring-Boot, Tensorflow, NumPy, Scikit-Learn, Pandas, Keras, Matplotlib}
