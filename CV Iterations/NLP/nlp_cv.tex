@@ -100,7 +100,7 @@
       {Master of Science in Computer Science; GPA: 3.93}{2019 -- 2021}
       \resumeItemListStart
       \resumeItem{Courses}
-       {Analysis of Algorithms, Data Science, Natural Language Processing, Probability \& Statistics}
+       {Analysis of Algorithms, Natural Language Processing, Data Science, Probability \& Statistics}
        \resumeItem{Teaching Assistant}
        {CSE 354 - Natural Language Processing, CSE 214 - Data Structures}
        \resumeItemListEnd
@@ -108,8 +108,8 @@
       {University of Mumbai}{Mumbai, India}
       {Bachelor of Engineering in Information Technology;  First Class with Distinction (72.9\%)}{2011 -- 2015}
       \resumeItemListStart
-      \resumeItem{Relevant Courses}
-       {Data Structures and Algorithms, Artificial Intelligence, Discrete Mathematics}
+      \resumeItem{Courses}
+       {Data Structures, Artificial Intelligence, Discrete Mathematics, Databases}
        \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -117,29 +117,23 @@
 \section{{\faFlask} Projects}
   \resumeSubHeadingListStart
   \resumeSubItem{Toxic Online Comments} {
-   Applied Deep Learning and Transfer learning to identify Toxicity in Wikipedia comments. Evaluated and compared the performance of sequential and state-of-the-art BERT models on the task.
-  }
+   Toxicity classification in Wikipedia Comments and Twitter datasets by applying deep learning and transfer learning. Analyzed the results of sequential LSTM/GRU against state-of-the-art BERT models.}
    \resumeSubItem{Chess Player Ratings} {
-    A regression based model to predict the Elo rating of a player from the moves sequences.
-  }
-  \resumeSubItem{Relationship Extraction}{A Bi-GRU model with Attention and dropout to evaluate its performance on the SemEval-2010 Task 8 dataset.}
+     Predicting the Elo rating of a chess player from the moves sequence. Efforts involved EDA and feature engineering using Pandas and Matplotlib; as well as modeling with Linear Regression and Random Forest.}
+    \resumeSubItem{Relationship Extraction}{A Bi-GRU model with Self Attention and Dropout layers to evaluate its performance on the SemEval-2010 Task 8 dataset.}
   
-  \resumeSubItem{Sentence Vector Representations}
-      {Implementation of Deep Averaging Network(DAN) and the Gated Recurrent Unit(GRU) Sequence models. The results are then evaluated on IMDB movie reviews for sentiment classification.} 
+  \resumeSubItem{Sentence Representations}
+      {Multi-layered Deep Averaging Network(DAN) and GRU models implementation using TensorFlow and Keras API. The results are then evaluated on IMDB movie reviews for sentiment classification.} 
       \resumeSubItem{Skip-gram based Word2Vec}
-      {Word2Vec implementation with analysis of cross entropy loss v/s noise contrastive estimation as the objective function. Evaluation is done on the semantic task of word analogies.}
+      {A Word2Vec implementation with cross entropy loss and noise contrastive estimation as the objective functions. Evaluation is done on the semantic task of word analogies.}
   \resumeSubItem{Physual(\textit{Capstone})}
-      {A text to scene generation system to visualize Mechanics word problems based on StanfordCore NLP, Java 3D and Blender Models.}
-  \resumeSubItem{Natural Language Toolkit Misc.}
-    {Miscellaneous projects including 'News Article Classifier' and 'Similar Document Clustering System' based on tf-idf and page rank algorithms..
-    }
-    \resumeSubItem{Machine Learning}
-    {'Products Review Sentiments', 'Songs Recommendation', and 'Handwritten Digit Recognizer'.     
-    }
+      {A text to scene generation system for Physics word problems based on StanfordCore NLP, Java 3D and Blender Models.}
+  \resumeSubItem{Miscellaneous}
+    {News Articles Classifier and Similar Document Clustering System based on TF-IDF using NLTK, Products Review Sentiments, Songs Recommendation, and Handwritten Digit Recognizer.}
   \resumeSubHeadingListEnd
 
 %-----------PUBLICATION(S)-----------------
-\section{{\aiGoogleScholar} Publication(s)}
+\section{{\aiGoogleScholar}Publication(s)}
   \resumeSubHeadingListStart
     \resumeSubItem{\href{http://research.ijcaonline.org/volume116/number14/pxc3902766.pdf}	{Visualization of Mechanics Problems based on Natural Language Processing}}
       {Summarized the research efforts and results of the aforementioned Capstone Project. (\textit{International Journal of Computer Applications - April,2015})}
@@ -155,9 +149,9 @@
       \resumeItem{NLP Query Service}
        {An interactive system to resolve user queries that uses a model trained on the CRF classifier from StanfordCore NLP and returns the nearest possible solution from an existing knowledge base.}
        \resumeItem{Trader Analytics} 
-       {Implemented functionalities such as absolute and percent variation, market share and standard deviation of stock prices based on historic data to assist traders in making better decisions.}
+       {Introduced statistical enhancements such as absolute and percent variance, market share and standard deviation of historical stock prices to aid in trading decisions.}
        \resumeItem{Real-Time Pricing}
-          {Developed a component which approximates market risk in real-time from live underlying prices; and publishes the results for consumption. It helped retire a legacy system thus saving the firm $\sim$\$250k.}
+          {Developed a component using Spring, JMS and TDD principles that approximates real-time market risk using live prices; and publishes out the result. It helped retire a legacy system saving the firm $\sim$\$250k.}
        \resumeItemListEnd
       \vspace{-1pt}\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
      \\\textit{\small Application Developer} & \textit{\small July 2015 -- Jan 2018}
@@ -165,23 +159,23 @@
        \resumeItemListStart
       \resumeItem{Risk Management System}
           {Worked extensively on the core app used by traders for visualizing and hedging risk;\\
-          1. Optimized the Positions feed using LMax Disruptor, a low latency queue library for upto 20\% faster processing.\\
-          2. Process startup time improvement by 50\% through the use of concurrency and Spring annotations.\\
+          1. Optimized the data feed using LMax Disruptor, a low latency queue Java library for upto 20\% faster processing.\\
+          2. Process startup time improvement by 50\% through the use of Multi-threading and Spring annotations.\\
           }
         \resumeItem{Market Data Source}
-          {Framework for validating the functionality of the critical market data publisher and reporting results using Java MXBeans and Apache POI. Reduced the manual testing effort by 90\%.}
+          {Framework for validating the functionality of a critical market data publishing app and reporting results using Java MXBeans and Apache POI. Reduced the manual testing effort by 90\%.}
           \resumeItem{Quick-Deploy}
-          {Streamlined the deployment, startup and health check of application modules in production.}
+          {Streamlined application deployment, startup and monitoring on Unix production servers.}
           \resumeItem{MongoDB High availability}
-          {Mechanism to switch from replica set to standalone configuration on the fly in case of a data center failure. Ensured business continuity during critical failures and reduced operational risk. }  
+          {Team point of contact for MongoDB. Built a mechanism to switch from replica set to standalone instance on the fly in case of a data center failure ensuring business continuity.}  
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %--------TECHNICAL SKILLS------------
 \section{{\faGears} Technical Skills}
  \resumeSubHeadingListStart
- \resumeSubItem{Languages}{Java, Python, Unix Shell Scripting, SQL, MATLAB}
- \resumeSubItem{Frameworks}{Tensorflow, NumPy, Scikit-Learn, Pandas, Keras, Matplotlib, Spring, Swagger}
+ \resumeSubItem{Languages}{Python, Java, Unix Shell Scripting, SQL, MATLAB}
+ \resumeSubItem{Frameworks}{TensorFlow, Pandas, NumPy, Scikit-Learn, Keras, Matplotlib, Spring, Swagger}
  \resumeSubItem{Databases}{Sybase ASE, MongoDB, MySQL}
  \resumeSubHeadingListEnd
 
