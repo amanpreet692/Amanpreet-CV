@@ -101,16 +101,16 @@
       {Master of Science in Computer Science; GPA: 3.93}{2019 -- 2021}
       \resumeItemListStart
       \resumeItem{Courses}
-       {Analysis of Algorithms, Data Science, Natural Language Processing}
+       {Analysis of Algorithms, Natural Language Processing, Data Science, Probability \& Statistics}
        \resumeItem{Teaching Assistant}
-       {CSE 214 - Data Structures}
+       {CSE 354 - Natural Language Processing, CSE 416 - Software Engineering}
        \resumeItemListEnd
     \resumeSubheading
       {University of Mumbai}{Mumbai, India}
       {Bachelor of Engineering in Information Technology;  First Class with Distinction (72.9\%)}{2011 -- 2015}
       \resumeItemListStart
-      \resumeItem{Relevant Courses}
-       {Data Structures and Algorithms, Operating Systems, Discrete Mathematics}
+      \resumeItem{Courses}
+       {Data Structures, Artificial Intelligence, Discrete Mathematics, Databases}
        \resumeItemListEnd
   \resumeSubHeadingListEnd
   
@@ -124,26 +124,28 @@
        \resumeItem{NLP Query Service}
        {An interactive system to resolve user queries that uses a model trained on the CRF classifier from StanfordCore NLP and returns the nearest possible solution from an existing knowledge base.}
        \resumeItem{Trader Analytics} 
-       {Implemented functionalities such as absolute and percent variation, market share and standard deviation of stock prices based on historic data to assist traders in making better decisions.}
+       {Introduced statistical enhancements in the core application such as absolute and percent variance, market share and standard deviation of historical stock prices to aid in trading decisions.}
        \resumeItem{Memory Optimization}
-       {Performance tuning of heap consumption and G1 Garbage Collection through careful analysis of humongous allocations resulting in 80\% fewer memory related issues.}
+       {Application heap usage profiling and G1 Garbage Collection tuning through careful analysis of humongous allocations resulting in 80\% fewer memory related issues.}
        \resumeItem{Real-Time Pricing}
-          {Developed a component which approximates market risk in real-time from live underlying prices; and publishes the results for consumption. It helped retire a legacy system thus saving the firm $\sim$\$250k.}
+          {Developed a component using Spring, REST, JMS and TDD principles that approximates real-time risk using live prices; and publishes them out. It helped retire a legacy system saving the firm $\sim$\$250k.}
 	   \resumeItemListEnd
       \vspace{-1pt}
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
      \textit{\small Application Developer} & \textit{\small July 2015 -- Jan 2018} \\
       \end{tabular*}\vspace{-5pt}
       \resumeItemListStart
-          \resumeItem{Risk Management System}
+           \resumeItem{Risk Management System}
           {Worked extensively on the core app used by traders for visualizing and hedging risk;\\
-          1. Optimized the Positions feed using LMax Disruptor, a low latency queue library for upto 20\% faster processing.\\
-          2. Process startup time improvement by 50\% through the use of concurrency and Spring annotations.\\
+          1. Optimized the data feed using LMax Disruptor, a low latency Java queue for upto 20\% faster processing.\\
+          2. Process startup time improvement by 50\% through the use of Multi-threading and Spring annotations.\\
           }
+          
+       \resumeItem{Position/Trades feed migration:} {Spearheaded the development effort in migrating the critical source feeds and fixed several timely bugs reducing the reputational and operational risk.}
         \resumeItem{Market Data Source}
-          {Framework for validating the functionality of the critical market data publisher and reporting results using Java MXBeans and Apache POI. Reduced the manual testing effort by 90\%.}\resumeItem{Quick-Deploy}
-          {Streamlined the deployment, startup and health check of application modules in production.}        \resumeItem{MongoDB High availability}
-          {Mechanism to switch from replica set to standalone configuration on the fly in case of a data center failure. Ensured business continuity during critical failures and reduced operational risk. } 
+          {Framework for validating the functionality of a critical market data publishing app and reporting results using Java MXBeans and Apache POI. Reduced the manual testing effort by 90\%.}
+          \resumeItem{MongoDB High availability}
+          {Team point of contact for MongoDB. Built a mechanism to switch from replica set to standalone instance on the fly in case of a data center failure ensuring business continuity.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
   
@@ -152,19 +154,15 @@
 \section{{\faFlask} Projects}
   \resumeSubHeadingListStart
   \resumeSubItem{Toxic Online Comments} {
-   Applied Deep Learning and Transfer learning to identify Toxicity in Wikipedia comments. Evaluated and compared the performance of sequential and state-of-the-art BERT models on the task.
-  }
+   Toxicity classification in Wikipedia Comments and Twitter datasets by applying deep learning and transfer learning. Analyzed the results of sequential LSTM/GRU against state-of-the-art BERT models.}
    \resumeSubItem{Chess Player Ratings} {
-    A regression based model to predict the Elo rating of a player from the moves sequences.
-  }
+     Predicting the Elo rating of a chess player from the moves sequence. Efforts involved EDA and feature engineering using Pandas and Matplotlib; as well as modeling with Linear Regression and Random Forest.}
    \resumeSubItem{Relationship Extraction}{An attention based and its performance evaluation on the SemEval-2010 Task 8 dataset.}
   \resumeSubItem{Skip-gram based Word2Vec}
-      {Word2Vec implementation with analysis of cross entropy loss v/s noise contrastive estimation as the objective function. Evaluation is done on the semantic task of word analogies.}
+      {A Word2Vec implementation with cross entropy loss and noise contrastive estimation as the objective functions. Evaluation is done on the semantic task of word analogies.}
   \resumeSubItem{Physual(\textit{Capstone})}
-      {A text to scene generation system to visualize Mechanics word problems based on StanfordCore NLP, Java 3D and Blender Models.}
-  \resumeSubItem{Miscellaneous}
-    {'News Article Classifier', 'Products Review Sentiment Analyser', 'Songs Recommender System' and 'Similar Document Clustering System' based on tf-idf and page rank algorithms.
-    }\resumeSubItem{\href{https://github.com/amanpreet692/HandleBarsEmailTemplate}
+      {A text to scene generation system for Physics word problems based on StanfordCore NLP, Java 3D and Blender Models.}
+  \resumeSubItem{\href{https://github.com/amanpreet692/HandleBarsEmailTemplate}
     {Email Template Generator}}
     {Built on the handlebars framework, creates templates to send out reactive email alerts.}       \resumeSubItem{\href{https://bitbucket.org/APS692/udp-with-error-detection} {Reliable UDP}}
       {Server-Client Exchange with Checksum validation and re-transmission in case of corrupt data.}
@@ -182,7 +180,7 @@
 \section{{\faGears} Technical Skills}
  \resumeSubHeadingListStart
  \resumeSubItem{Languages}{Java, Python, Unix Shell Scripting, SQL, MATLAB}
- \resumeSubItem{Frameworks}{Spring, Spring-Boot, Tensorflow, NumPy, Scikit-Learn, Pandas, Keras, Matplotlib}
+ \resumeSubItem{Frameworks}{Spring, Spring-Boot, JUnit, Mockito, Tensorflow, NumPy, Scikit-Learn, Pandas, Keras, Matplotlib}
  \resumeSubItem{Databases}{Sybase ASE, MongoDB, MySQL}
  \resumeSubItem{CI Tools}{Gradle, Team City, Git, Bitbucket, Ant, Jenkins, YourKit}
  \resumeSubHeadingListEnd

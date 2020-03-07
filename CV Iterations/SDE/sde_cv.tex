@@ -108,16 +108,16 @@
       {Master of Science in Computer Science; GPA: 3.93}{2019 -- 2021}
       \resumeItemListStart
       \resumeItem{Courses}
-       {Analysis of Algorithms, Data Science, Natural Language Processing}
+       {Analysis of Algorithms, Probability \& Statistics, Data Science, Natural Language Processing}
        \resumeItem{Teaching Assistant}
-       {CSE 214 - Data Structures}
+       {CSE 214 - Data Structures (Java), CSE 416 - Software Engineering}
        \resumeItemListEnd
     \resumeSubheading
       {University of Mumbai}{Mumbai, India}
       {Bachelor of Engineering in Information Technology;  First Class with Distinction (72.9\%)}{2011 -- 2015}
       \resumeItemListStart
-      \resumeItem{Relevant Courses}
-       {Data Structures and Algorithms, Operating Systems, Discrete Mathematics}
+      \resumeItem{Courses}
+       {Data Structures and Algorithms, Operating Systems, Discrete Mathematics, Databases}
        \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -130,13 +130,13 @@
       {Senior Application Developer}{Feb 2018 -- Aug 2019}
       \resumeItemListStart
        \resumeItem{Data Access Control System (DACS) Authentication}
-       {Ensuring secure access to live prices from Bloomberg. Instrumental in helping the firm avoid any audit issues and reduced subscription costs per trader by 50\%.}
+       {Authorised access to live prices over JMS based metafluent queue. Crucial in helping the firm avoid audit issues and reduced subscription costs per trader by 50\%.}
        \resumeItem{Trader Analytics} 
-       {Implemented functionalities such as absolute and percent variation, market share and standard deviation of stock prices based on historic data to assist traders in making better decisions.}
+       {Introduced statistical enhancements in the core application such as absolute and percent variance, market share and standard deviation of historical stock prices to aid in trading decisions.}
        \resumeItem{Memory Optimization}
-       {Performance tuning of heap consumption and G1 Garbage Collection through careful analysis of humongous allocations resulting in 80\% fewer memory related issues.}
+       {Application heap usage profiling and G1 Garbage Collection tuning through careful analysis of humongous allocations resulting in 80\% fewer memory related issues.}
        \resumeItem{Real-Time Pricing}
-          {Developed a component which approximates market risk in real-time from live underlying prices; and publishes the results for consumption. It helped retire a legacy system thus saving the firm $\sim$\$250k.}
+          {Developed a component using Spring, REST, JMS and TDD principles that approximates real-time risk using live prices; and publishes them out. It helped retire a legacy system saving the firm $\sim$\$250k.}
 	   \resumeItemListEnd
       \vspace{-1pt}
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -145,13 +145,15 @@
       \resumeItemListStart
           \resumeItem{Risk Management System}
           {Worked extensively on the core app used by traders for visualizing and hedging risk;\\
-          1. Optimized the Positions feed using LMax Disruptor, a low latency queue library for upto 20\% faster processing.\\
-          2. Process startup time improvement by 50\% through the use of concurrency and Spring annotations.\\
-          }
+          1. Optimized the data feed using LMax Disruptor, a low latency Java queue for upto 20\% faster processing.\\
+          2. Process startup time improvement by 50\% through the use of Multi-threading and Spring annotations.\\
+          }\resumeItem{Position/Trades feed migration:} {Spearheaded the development effort in migrating the critical source feeds and fixed several timely bugs reducing the reputational and operational risk.}
         \resumeItem{Market Data Source}
-          {Framework for validating the functionality of the critical market data publisher and reporting results using Java MXBeans and Apache POI. Reduced the manual testing effort by 90\%.}\resumeItem{Quick-Deploy}
-          {Streamlined the deployment, startup and health check of application modules in production to bring down the release time by 66\%.}        \resumeItem{MongoDB High availability}
-          {Mechanism to switch from replica set to standalone configuration on the fly in case of a data center failure. Ensured business continuity during critical failures and reduced operational risk. } 
+          {Framework for validating the functionality of a critical market data publishing app and reporting results using Java MXBeans and Apache POI. Reduced the manual testing effort by 90\%.}
+          \resumeItem{Quick-Deploy}
+          {Streamlined application deployment, startup and monitoring on Unix production servers.}
+          \resumeItem{MongoDB High availability}
+          {Team point of contact for MongoDB. Built a mechanism to switch from replica set to standalone instance on the fly in case of a data center failure ensuring business continuity.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -159,7 +161,7 @@
 \section{{\faGears} Technical Skills}
  \resumeSubHeadingListStart
  \resumeSubItem{Languages}{Java, Python, Unix Shell Scripting, SQL}
- \resumeSubItem{Frameworks}{Spring, Spring-Boot, Swagger, Apache POI, Java MBeans, JMS, Pandas, JBehave}
+ \resumeSubItem{Frameworks}{Spring, Spring-Boot, Swagger, JUnit, Mockito, Java MBeans, JMS, JBehave}
  \resumeSubItem{CI Tools}{Gradle, Team City, Git, Bitbucket, Ant, Jenkins, YourKit}
  \resumeSubItem{Databases}{Sybase ASE, MongoDB, MySQL}
  \resumeSubHeadingListEnd
@@ -168,8 +170,7 @@
 %-----------PROJECTS-----------------
 \section{{\faFlask} Projects}
   \resumeSubHeadingListStart
-  \resumeSubItem{Chess Player Ratings} {A regression model to predict the Elo rating of a player from the moves sequence data.
-  }\resumeSubItem{Toxic Online Comments} {
+  \resumeSubItem{Toxic Online Comments} {
   Deep learning model for identifying Toxicity in Wikipedia comments.
   }
   \resumeSubItem{\href{https://github.com/amanpreet692/HandleBarsEmailTemplate}
@@ -182,7 +183,7 @@
   \resumeSubItem{Physual(\textit{Capstone})}
       {Text to scene system to visualize Mechanics problems using NLP, Java 3D and Blender Models.}
 \resumeSubItem{Machine Learning/NLP}
-    {'Inverted Index Builder', 'News Article Classifier', 'Products Review Sentiment Analyser', 'Songs Recommender System' and 'Similar Document Clustering System' based on tf-idf and page rank algorithms.
+    {News Article Classifier, Products Review Sentiment Analyser and Songs Recommendations
     }      
   \resumeSubHeadingListEnd
 
