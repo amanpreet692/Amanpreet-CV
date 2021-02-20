@@ -1,5 +1,6 @@
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,11pt]{article}
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -21,10 +22,10 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.55in}
-\addtolength{\evensidemargin}{-0.55in}
-\addtolength{\textwidth}{0.75in}
-\addtolength{\topmargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -35,8 +36,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
@@ -113,14 +114,14 @@
       \resumeItemListStart
        \resumeItem{Thesis}
        {Sequence Labeling for Network File System Specifications\\
-       \textbf{Advisor:}
+       \textbf{Advised by:}
        {Prof. Niranjan Balasubramanian}}
       \resumeItem{Courses}
        {Natural Language Processing, Machine Learning, Data Science, Probability \& Statistics}
        \resumeItemListEnd
     \resumeSubheading
       {University of Mumbai}{Mumbai, India}
-      {Bachelor of Engineering in Information Technology;  First Class with Distinction (73\%)}{2011 -- 2015}
+      {Bachelor of Engineering in Information Technology;  First Class with Distinction (72.9\%)}{2011 -- 2015}
       \resumeItemListStart
       \resumeItem{Courses}
        {Data Structures \& Algorithms, Artificial Intelligence, Discrete Mathematics, Databases}
@@ -140,9 +141,9 @@
 \section{{\faFlask} Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{NER for system specifications}
-    {Dataset annotation with Brat and fine-tuning pre-trained langage models on code sequence classification in network file system specifications. The language model itself is first fine-tuned on a manually scraped corpus for domain adaptation. The small size of labelled data for the end task is the primary challenge.}
+    {Dataset annotation using Brat and code sequence classification in network file system specification documents by fine-tuning pre-trained language models. The language model itself is first fine-tuned on a manually scraped corpus for better domain adaptability. The lack of a large training set for the end task is a challenge.}
    \resumeSubItem{Startup Acquisition Prediction}
-    {Implementation and evaluation of three ensemble methods including anomaly detection, Naive Bayes and random forest on highly imbalanced data to predict whether a startup will be acquired.}
+    {Implementation and evaluation of different ensemble methods including anomaly detection, Naive Bayes and random forest on highly imbalanced data to predict whether a startup will be acquired.}
   \resumeSubItem{Toxic Online Comments} {Multi-label toxicity detection in Wikipedia Comments and transfer learning effectiveness of the classifier on Twitter dataset. Analyzed the results of stacked LSTM/GRU against BERT and distilBERT models.}
     \resumeSubItem{Long Documents Classification}
     {Parsing and multi-class categorization of documents with over 10k tokens using Bag of words, Tf-Idf, Doc2Vec and Attention based Neural models.}
@@ -157,15 +158,15 @@
 \section{{\faBriefcase} Experience}
   \resumeSubHeadingListStart
    \resumeSubheading
-      {SS\&C Intralinks}{Boston, MA}
+      {SS\&C Intralinks}{Waltham, MA}
       {Machine Learning Engineer Intern (NLP)}{May 2020 -- Dec 2020}
        \resumeItemListStart
       \resumeItem{Abstractive Summarization}
        {Deep learning and REST service based business document summarizer:\\
        1. Curated and published a dataset of 18k open access business articles with their abstracts as summaries.\\
        2. Improved ROUGE score of SOTA models like BART and T5 by more than 10 points via fine-tuning.\\
-       3. Built a custom encoder-decoder for T5 model to compress larger inputs and avoid memory constraints during training.\\
-       4. Adapted existing seq2seq model to ONNX quantization format reducing size by 75\% and inference time by 30\%.\\
+       3. Built a custom encoder-decoder for T5 model to compress large inputs and avoid memory constraints.\\
+       4. Adapted existing seq2seq model to ONNX quantization format reducing size by 75\% and inference time by 30\%.
        5. Flask based service to return raw abstractive summary with highlighted essential parts of a PDF. 
        }
        \resumeItemListEnd
@@ -180,6 +181,7 @@
        \resumeItem{Real-Time Pricing}
           {Developed a component using Spring, JMS and TDD principles that approximates real-time market risk using live prices; and publishes out the result. It helped retire a legacy system saving the firm $\sim$\$250k.}
        \resumeItemListEnd
+       \pagebreak
       \vspace{-3pt}\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
      \\\textit{\small Software Development Engineer} & \textit{\small July 2015 -- Jan 2018}
       \end{tabular*}\vspace{-5pt}
@@ -198,8 +200,37 @@
 \section{{\faGears} Technical Skills}
  \resumeSubHeadingListStart
  \resumeSubItem{Languages}{Python, Java, Unix Shell Scripting, SQL, MATLAB}
- \resumeSubItem{Frameworks}{PyTorch, TensorFlow, HuggingFace(Contributor),Scikit-Learn,  Pandas, NumPy, NLTK, Swagger}
+ \resumeSubItem{Frameworks}{PyTorch, TensorFlow, HuggingFace(Contributor), Pandas, NumPy, Scikit-Learn, Spring, Swagger}
  \resumeSubItem{Databases}{Sybase ASE, MongoDB, MySQL}
  \resumeSubHeadingListEnd
+ 
+ 
+ %--------TEACHING EXPERIENCE------------
+\section{{\faClipboard} Teaching}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stony Brook University}{Stony Brook, NY}
+      {Teaching Assistant}{Aug 2019 -- May 2020}
+\begin{enumerate}[label={}, labelsep=0pt, leftmargin=0pt]
+    \item CSE 214 Data Structures in Java
+    \item CSE 354 Natural Language Processing
+    \item CSE 416 Software Engineering
+\end{enumerate}
+      
+\resumeSubheading
+      {K.J. Somaiya College of Engineering}{Mumbai, India}
+      {Guest Lecturer}{Mar 2019}
+\begin{enumerate}[label={}, labelsep=0pt, leftmargin=0pt]
+    \item Seminar on benefits of using Spring and SpringBoot frameworks for client-server apps for undergrad juniors.
+\end{enumerate}
 
+\resumeSubheading
+      {CrossNibble Technologies}{Mumbai, India}
+      {Technical Instructor}{Mar 2015 -- July 2015}
+      
+\begin{enumerate}[label={}, labelsep=0pt, leftmargin=0pt]
+    \item Course Designer and instructor for hands-on Java programming for a class of 25 undergrads.
+\end{enumerate}
+
+\resumeSubHeadingListEnd
 \end{document}
