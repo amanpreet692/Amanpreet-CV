@@ -53,18 +53,18 @@
 \newcommand{\resumeItemNoColonNB}[1]{
   \item[]\small{#1}}
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-2pt}}
 \newcommand{\resumeSubItemNoColon}[2]{\resumeItemNoColon{#1}{#2}\vspace{-4pt}}
 
 \newcommand{\resumeSubheadingNoColon}[2]{
-  \vspace{-1pt}\small \item
+  \vspace{2pt}\small \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textit{#2} \\
     \end{tabular*}\vspace{-5pt}
@@ -130,6 +130,7 @@
 %-----------PUBLICATION(S)-----------------
 \section{{\aiGoogleScholar}Publications}
   \resumeSubHeadingListStart
+    \vspace{4pt}
     \item\small
     {\textbf{Singh, A.}, \& Balasubramanian, N. (2020), ``Open4Business (O4B): An Open Access Dataset for Summarizing Business Documents'', \textit{Workshop on Dataset Curation and Security - NeurIPS 2020}}\vspace{-2pt}
     \item\small
@@ -138,6 +139,7 @@
 \resumeSubHeadingListEnd
 %-----------PROJECTS-----------------
 \section{{\faFlask} Projects}
+\vspace{4pt}
   \resumeSubHeadingListStart
     \resumeSubItem{NER for system specifications}
     {Generating meaningful representations of file system specifications by classifying token sequences as code entities. The target dataset was annotated using Brat. The pre-trained BERT and RoBERTa language models were first fine-tuned on a manually scraped corpus for domain adaptation and then on the target task.}
@@ -145,7 +147,7 @@
     {Implementation and analysis of three multi-class ensemble models including anomaly detection, Naive Bayes and random forest on highly imbalanced data to predict whether a startup will be acquired.}
   \resumeSubItem{Online Toxicity} {Multi-label classifier to detect toxicity/hate in Wikipedia Comments and transfer learning experiments with the classifier on Twitter dataset. Analyzed the results of stacked LSTM/GRU against BERT and distilBERT models.}
     \resumeSubItem{Long Documents Classification}
-    {Parsing and categorization of corporate PDFdf documents with over 10k tokens into 6 labels using techniques like Bag of words, Tf-Idf, Doc2Vec and Attention based Neural models.}
+    {Parsing and categorization of corporate PDF documents with over 10k tokens into 6 labels using techniques like Bag of words, Tf-Idf, Doc2Vec and Attention based Neural models.}
    \resumeSubItem{Chess Player Ratings} {
      Predicting the Elo rating of a chess player from the moves sequence. Efforts involved EDA and smart feature engineering using Pandas and Matplotlib; as well as modeling with Linear Regression and Random Forest.}
   \resumeSubItem{Physual}
@@ -180,7 +182,7 @@
        \resumeItem{Real-Time Pricing}
           {Developed a module from scratch using TDD principles that approximates real-time market risk using live prices; and publishes out the result on a message queue. Helped retire a legacy system saving the firm $\sim$\$250k.}
        \resumeItemListEnd
-      \vspace{-3pt}\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \vspace{-15pt}\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
      \\\textit{\small Software Development Engineer} & \textit{\small July 2015 -- Jan 2018}
       \end{tabular*}\vspace{-5pt}
        \resumeItemListStart
@@ -196,6 +198,7 @@
 
 %--------TECHNICAL SKILLS------------
 \section{{\faGears} Technical Skills}
+\vspace{4pt}
  \resumeSubHeadingListStart
  \resumeSubItem{Languages}{Python, Java, Unix Shell Scripting, SQL, MATLAB}
  \resumeSubItem{Frameworks}{PyTorch, TensorFlow, HuggingFace(Contributor), Scikit-Learn,  Pandas, NumPy, NLTK, Swagger}
