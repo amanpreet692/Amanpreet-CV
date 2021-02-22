@@ -140,16 +140,16 @@
 \section{{\faFlask} Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{NER for system specifications}
-    {Dataset annotation with Brat and fine-tuning pre-trained langage models on code sequence classification in network file system specifications. The language model itself is first fine-tuned on a manually scraped corpus for domain adaptation. The small size of labelled data for the end task is the primary challenge.}
+    {Generating meaningful representations of file system specifications by classifying token sequences as code entities. The target dataset was annotated using Brat. The pre-trained BERT and RoBERTa language models were first fine-tuned on a manually scraped corpus for domain adaptation and then on the target task.}
    \resumeSubItem{Startup Acquisition Prediction}
-    {Implementation and evaluation of three ensemble methods including anomaly detection, Naive Bayes and random forest on highly imbalanced data to predict whether a startup will be acquired.}
-  \resumeSubItem{Toxic Online Comments} {Multi-label toxicity detection in Wikipedia Comments and transfer learning effectiveness of the classifier on Twitter dataset. Analyzed the results of stacked LSTM/GRU against BERT and distilBERT models.}
+    {Implementation and analysis of three multi-class ensemble models including anomaly detection, Naive Bayes and random forest on highly imbalanced data to predict whether a startup will be acquired.}
+  \resumeSubItem{Online Toxicity} {Multi-label classifier to detect toxicity/hate in Wikipedia Comments and transfer learning experiments with the classifier on Twitter dataset. Analyzed the results of stacked LSTM/GRU against BERT and distilBERT models.}
     \resumeSubItem{Long Documents Classification}
-    {Parsing and multi-class categorization of documents with over 10k tokens using Bag of words, Tf-Idf, Doc2Vec and Attention based Neural models.}
+    {Parsing and categorization of corporate PDFdf documents with over 10k tokens into 6 labels using techniques like Bag of words, Tf-Idf, Doc2Vec and Attention based Neural models.}
    \resumeSubItem{Chess Player Ratings} {
-     Predicting the Elo rating of a chess player from the moves sequence. Efforts involved EDA and feature engineering using Pandas and Matplotlib; as well as modeling with Linear Regression and Random Forest.}
+     Predicting the Elo rating of a chess player from the moves sequence. Efforts involved EDA and smart feature engineering using Pandas and Matplotlib; as well as modeling with Linear Regression and Random Forest.}
   \resumeSubItem{Physual}
-      {A text to scene generation system to visualize Physics problems with Stanford NLP, Java3D and Blender.}
+      {A text to scene generation system to visualize Physics problems with StanfordCore NLP, Java3D and Blender.}
  
   \resumeSubHeadingListEnd
 
@@ -158,15 +158,15 @@
   \resumeSubHeadingListStart
    \resumeSubheading
       {SS\&C Intralinks}{Boston, MA}
-      {Machine Learning Engineer Intern (NLP)}{May 2020 -- Dec 2020}
+      {Machine Learning Engineer (NLP)}{May 2020 -- Dec 2020}
        \resumeItemListStart
       \resumeItem{Abstractive Summarization}
-       {Deep learning and REST service based business document summarizer:\\
+       {Business document summarization system built on deep learning and REST frameworks:\\
        1. Curated and published a dataset of 18k open access business articles with their abstracts as summaries.\\
-       2. Improved ROUGE score of SOTA models like BART and T5 by more than 10 points via fine-tuning.\\
-       3. Built a custom encoder-decoder for T5 model to compress larger inputs and avoid memory constraints during training.\\
-       4. Adapted existing seq2seq model to ONNX quantization format reducing size by 75\% and inference time by 30\%.\\
-       5. Flask based service to return raw abstractive summary with highlighted essential parts of a PDF. 
+       2. Improved ROUGE score of SOTA seq2seq models like BART and T5 by more than 10 points via fine-tuning.\\
+       3. Built a custom encoder-decoder to compress larger inputs by 50\% and avoid out of memory issue during training.\\
+       4. Adapted the fine-tuned model to ONNX quantization format reducing its size by 75\% and inference time by 30\%.\\
+       5. Flask based service to return the raw abstractive summary with the salient parts of the PDF highlighted. 
        }
        \resumeItemListEnd
      \resumeSubheading
@@ -178,15 +178,15 @@
        \resumeItem{Trader Analytics} 
        {Introduced statistical enhancements in the core application such as absolute and percent variance, market share and standard deviation of historical stock prices to aid in trading decisions.}
        \resumeItem{Real-Time Pricing}
-          {Developed a component using Spring, JMS and TDD principles that approximates real-time market risk using live prices; and publishes out the result. It helped retire a legacy system saving the firm $\sim$\$250k.}
+          {Developed a module from scratch using TDD principles that approximates real-time market risk using live prices; and publishes out the result on a message queue. Helped retire a legacy system saving the firm $\sim$\$250k.}
        \resumeItemListEnd
       \vspace{-3pt}\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
      \\\textit{\small Software Development Engineer} & \textit{\small July 2015 -- Jan 2018}
       \end{tabular*}\vspace{-5pt}
        \resumeItemListStart
       \resumeItem{Risk Management System}
-          {Worked extensively on the core app used by traders for visualizing and hedging risk;\\
-          1. Optimized the data feed using LMax Disruptor, a low latency Java queue for upto 20\% faster trades processing.\\
+          {Worked extensively on the core app used by traders for visualizing and hedging risk:\\
+          1. Optimized the trades feed using LMax Disruptor, a low latency Java queue for upto 20\% faster trades processing.\\
           2. Framework to validate critical live market data results which reduced manual testing effort by 90\%.\\
           3. Mechanism to switch from a MongoDB replica set to standalone instance in the event of a data center failure.}  
       \resumeItemListEnd
@@ -198,7 +198,7 @@
 \section{{\faGears} Technical Skills}
  \resumeSubHeadingListStart
  \resumeSubItem{Languages}{Python, Java, Unix Shell Scripting, SQL, MATLAB}
- \resumeSubItem{Frameworks}{PyTorch, TensorFlow, HuggingFace(Contributor),Scikit-Learn,  Pandas, NumPy, NLTK, Swagger}
+ \resumeSubItem{Frameworks}{PyTorch, TensorFlow, HuggingFace(Contributor), Scikit-Learn,  Pandas, NumPy, NLTK, Swagger}
  \resumeSubItem{Databases}{Sybase ASE, MongoDB, MySQL}
  \resumeSubHeadingListEnd
 

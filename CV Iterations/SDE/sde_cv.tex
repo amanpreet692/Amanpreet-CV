@@ -93,10 +93,10 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-	 \textbf{{\Large Amanpreet Singh}} &
-     \href{mailto:amanpreet.singh@stonybrook.edu}{\faEnvelope \space amanpreet.singh@stonybrook.edu}\\
-     \faPhone \space +1 631-312-2565 &
-     \href{https://www.linkedin.com/in/amanpreet-singh-k}{\faLinkedin \space /amanpreet-singh-k}\\
+	 \textbf{{\Large Amanpreet Singh}} & \\
+     
+     \href{mailto:amanpreet.singh@stonybrook.edu}{\faEnvelope \space amanpreet.singh@stonybrook.edu} & \href{https://www.linkedin.com/in/amanpreet-singh-k}{\faLinkedin \space /amanpreet-singh-k}\\
+       \faPhone \space +1 631-312-2565 & \href{https://github.com/amanpreet692}{\faGithub \space /amanpreet692}\\
 \end{tabular*}
 
 
@@ -105,16 +105,14 @@
   \resumeSubHeadingListStart
   \resumeSubheading
       {Stony Brook University}{New York, U.S.A.}
-      {Master of Science in Computer Science; GPA: 3.93}{2019 -- 2021}
+      {Master of Science in Computer Science; GPA: 3.97}{2019 -- 2021}
       \resumeItemListStart
       \resumeItem{Courses}
        {Analysis of Algorithms, Probability \& Statistics, Data Science, Natural Language Processing}
-       \resumeItem{Teaching Assistant}
-       {CSE 214 - Data Structures (Java), CSE 416 - Software Engineering}
        \resumeItemListEnd
     \resumeSubheading
       {University of Mumbai}{Mumbai, India}
-      {Bachelor of Engineering in Information Technology;  First Class with Distinction (72.9\%)}{2011 -- 2015}
+      {Bachelor of Engineering in Information Technology;  First Class with Distinction (73\%)}{2011 -- 2015}
       \resumeItemListStart
       \resumeItem{Courses}
        {Data Structures and Algorithms, Operating Systems, Discrete Mathematics, Databases}
@@ -125,9 +123,22 @@
 %-----------EXPERIENCE-----------------
 \section{{\faPieChart} Experience}
   \resumeSubHeadingListStart
+  \resumeSubheading
+      {SS\&C Intralinks}{Boston, MA}
+      {Machine Learning Engineer (NLP)}{May 2020 -- Dec 2020}
+       \resumeItemListStart
+      \resumeItem{Abstractive Summarization}
+       {Business document summarization system built on deep learning and REST frameworks:\\
+       1. Curated and published a dataset of 18k open access business articles with their abstracts as summaries.\\
+       2. Improved ROUGE score of SOTA seq2seq models like BART and T5 by more than 10 points via fine-tuning.\\
+       3. Built a custom encoder-decoder to compress larger inputs by 50\% and avoid out of memory issue during training.\\
+       4. Adapted the fine-tuned model to ONNX quantization format reducing its size by 75\% and inference time by 30\%.\\
+       5. Flask based service to return the raw abstractive summary with the salient parts of the PDF highlighted. 
+       }
+       \resumeItemListEnd
       \resumeSubheading
       {J.P. Morgan Chase \& Co.}{Mumbai, India}
-      {Senior Application Developer}{Feb 2018 -- Aug 2019}
+      {Senior Software Development Engineer}{Feb 2018 -- Aug 2019}
       \resumeItemListStart
        \resumeItem{Data Access Control System (DACS) Authentication}
        {Authorised access to live prices over JMS based metafluent queue. Crucial in helping the firm avoid audit issues and reduced subscription costs per trader by 50\%.}
@@ -140,20 +151,14 @@
 	   \resumeItemListEnd
       \vspace{-1pt}
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-     \textit{\small Application Developer} & \textit{\small July 2015 -- Jan 2018} \\
+     \textit{\small Software Development Engineer} & \textit{\small July 2015 -- Jan 2018} \\
       \end{tabular*}\vspace{-5pt}
-      \resumeItemListStart
-          \resumeItem{Risk Management System}
-          {Worked extensively on the core app used by traders for visualizing and hedging risk;\\
-          1. Optimized the data feed using LMax Disruptor, a low latency Java queue for upto 20\% faster processing.\\
-          2. Process startup time improvement by 50\% through the use of Multi-threading and Spring annotations.\\
-          }\resumeItem{Position/Trades feed migration:} {Spearheaded the development effort in migrating the critical source feeds and fixed several timely bugs reducing the reputational and operational risk.}
-        \resumeItem{Market Data Source}
-          {Framework for validating the functionality of a critical market data publishing app and reporting results using Java MXBeans and Apache POI. Reduced the manual testing effort by 90\%.}
-          \resumeItem{Quick-Deploy}
-          {Streamlined application deployment, startup and monitoring on Unix production servers.}
-          \resumeItem{MongoDB High availability}
-          {Team point of contact for MongoDB. Built a mechanism to switch from replica set to standalone instance on the fly in case of a data center failure ensuring business continuity.}
+             \resumeItemListStart
+      \resumeItem{Risk Management System}
+          {Worked extensively on the core app used by traders for visualizing and hedging risk:\\
+          1. Optimized the trades feed using LMax Disruptor, a low latency Java queue for upto 20\% faster trades processing.\\
+          2. Framework to validate critical live market data results which reduced manual testing effort by 90\%.\\
+          3. Mechanism to switch from a MongoDB replica set to standalone instance in the event of a data center failure.}  
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -161,8 +166,8 @@
 \section{{\faGears} Technical Skills}
  \resumeSubHeadingListStart
  \resumeSubItem{Languages}{Java, Python, Unix Shell Scripting, SQL}
- \resumeSubItem{Frameworks}{Spring, Spring-Boot, Swagger, JUnit, Mockito, Java MBeans, JMS, JBehave}
- \resumeSubItem{CI Tools}{Gradle, Team City, Git, Bitbucket, Ant, Jenkins, YourKit}
+ \resumeSubItem{Frameworks}{Spring, Spring-Boot, Swagger, JUnit, Mockito, Java MBeans, Flask, Pandas}
+ \resumeSubItem{CI Tools}{Git, Jenkins, Gradle, Team City, Bitbucket, Ant}
  \resumeSubItem{Databases}{Sybase ASE, MongoDB, MySQL}
  \resumeSubHeadingListEnd
 %-------------------------------------------
@@ -170,21 +175,22 @@
 %-----------PROJECTS-----------------
 \section{{\faFlask} Projects}
   \resumeSubHeadingListStart
-  \resumeSubItem{Toxic Online Comments} {
-  Deep learning model for identifying Toxicity in Wikipedia comments.
+  \resumeSubItem{Online Toxicity} {
+  Deep learning model for identifying Toxicity/Hate in Wikipedia Comments.
   }
   \resumeSubItem{\href{https://github.com/amanpreet692/HandleBarsEmailTemplate}
     {Email Template Generator}}
     {Built on the handlebars framework, creates templates to send out reactive email alerts.}
+    \resumeSubItem{Machine Learning/NLP}
+    {Chess ELO rank predictor, Startup Acquisition, sequence labelling in system specifications
+    } 
     \resumeSubItem{Pratham NGO}
       {A system to keep track of the  underprivileged students supported by the NGO. Migrated data from Salesforce to Azure SQL using Pentaho Kettle and developed a Java utility for reporting faulty data.}
     \resumeSubItem{\href{https://bitbucket.org/APS692/udp-with-error-detection} {Reliable UDP}}
       {Server-Client Exchange with Checksum validation and re-transmission in case of corrupt data.}
-  \resumeSubItem{Physual(\textit{Capstone})}
+  \resumeSubItem{Physual}
       {Text to scene system to visualize Mechanics problems using NLP, Java 3D and Blender Models.}
-\resumeSubItem{Machine Learning/NLP}
-    {News Article Classifier, Products Review Sentiment Analyser and Songs Recommendations
-    }      
+     
   \resumeSubHeadingListEnd
 
 \end{document}
